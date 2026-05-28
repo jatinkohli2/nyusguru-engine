@@ -1,0 +1,38 @@
+---
+description: Plan A — product success and monetization roadmap for NyusGuru
+alwaysApply: true
+---
+
+# Plan A (NyusGuru product & monetization)
+
+User-designated baseline strategy. When discussing roadmap, priorities, or revenue, align with Plan A unless they introduce Plan B or override.
+
+## Success gaps (build in this order)
+
+1. **Reliability** — Fix recurring API/auth issues (e.g. telemetry `401 Invalid API key`), crash-free sessions, fast startup, stable feed loading.
+2. **Clear value loop** — One primary promise (e.g. best bilingual market+tech brief in ~5 min); optimize onboarding and first 3 sessions.
+3. **Personalization** — Use interaction logging (impression, click, dwell) to improve feed ranking so the feed feels smarter.
+4. **Retention** — Daily habit hooks: smart notifications, digest timing, streaks, follow topics.
+5. **Distribution & trust** — ASO, screenshots, privacy policy, terms, support channel, fast bug response.
+6. **Monetization infra** — Paywall, subscriptions, entitlements, pricing tests, conversion funnel analytics.
+
+## Monetization path (order)
+
+1. **Retention before revenue** — D1/D7 retention and WAU first.
+2. **Freemium subscription** — Free: limited daily articles + basic personalization. Premium: unlimited/deep summaries, ad-free, premium topics, smarter alerts, bookmark sync/export. Simple monthly + yearly pricing.
+3. **Ads (free tier only, careful)** — Native feed ads after every N cards; avoid interstitials early.
+4. **Affiliate (fast non-sub cash)** — Relevant books/courses/tools; disclosed, high relevance only.
+5. **B2B later** — Team digest / API once consumer signal quality is strong.
+
+## 90-day execution
+
+- **Days 1–30**: Stabilize auth/config + telemetry; crash/error monitoring; funnel instrumentation (install → onboarding → first read → return → subscribe).
+- **Days 31–60**: Ranking from signals; push strategy (1–2 quality nudges/day max); A/B onboarding and topic selection.
+- **Days 61–90**: Paywall v1 + free trial; 2–3 price tests; optional one native ad slot in free feed; weekly conversion + churn review.
+
+## Weekly metrics
+
+- Product: D1, D7, WAU/MAU, avg session time, articles/session
+- Quality: crash-free %, feed load success %, p95 feed latency
+- Monetization: paywall views, trial starts, trial→paid, ARPU, churn
+- Unit economics: CAC vs LTV when scaling acquisition
